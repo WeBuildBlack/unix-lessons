@@ -12,10 +12,10 @@ drwxr-xr-x  2 ryan users 4096 May 05 17:25 public_html
 user@bash:
 ```
 
-user@bash = prompt
-ls = command <===== usually goes first
--l /home/ryan = command line arguments <===== goes after command
-lines 2-5 = output <===== not every command displays output
+user@bash = prompt  
+ls = command <===== usually goes first  
+-l /home/ryan = command line arguments <===== goes after command  
+lines 2-5 = output <===== not every command displays output  
 
 Inside the terminal is a shell. A shell defines how a terminal looks and behaves when executing your commands.
 The most common shell is Bash. Bash stands for Bourne again shell. The reason for this is that the Bash shell is a successor to an older shell called the Bourne shell that was mad by Stephen Bourne at
