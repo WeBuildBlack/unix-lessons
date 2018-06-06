@@ -1,4 +1,8 @@
-### These lessons are intended to give you a solid foundation in how to use the terminal and get the computer to do useful work for you. You won't be a Unix guru at the end but you will be well on your way and armed with the right knowledge and skills to get you there if that's what you want (which you should because that will make you even more awesome).
+# What is Unix?
+Unix is an **operating** system built by the good people over at [Bell Labs](https://www.bell-labs.com/about/history-bell-labs/).
+
+# What is an operating system
+An operating system is the software that gives your computer it's basic functions such as scheduling tasks and opening applications. Two well known examples of operating systems are Windows and Mac OS.
 
 ### A command line, or terminal, is a text based interface to the system. You are able to enter commands by typing them on the keyboard and feedback will be given to you similarly as text.
 
