@@ -18,7 +18,8 @@ user@bash:
 
 user@bash = prompt  
 ls = command <===== usually goes first  
--l /home/ryan = command line arguments <===== goes after command  
+-l = command options <===== goes after command  
+/home/ryan = command argument <===== goes after arguments  
 lines 2-5 = output <===== not every command displays output  
 
 Inside the terminal is a shell. A shell defines how a terminal looks and behaves when executing your commands.
