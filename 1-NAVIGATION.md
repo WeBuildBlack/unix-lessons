@@ -1,10 +1,10 @@
-From this point on it is highly reccomended that you follow along by typing everything in your terminal. Learning by doing is the best way!  
+From this point on it is highly recommended that you follow along by typing everything in your terminal. Learning by doing is the best way!  
 
 # Navigation
-So let's talk a little about how we can move around our file system. This is important as many commands require you to reference the file system location when executing them.
+So let's explore how we move around our file system. This is important as many commands require you to reference the file system location when executing them.
 
 ## Where in the heck am I?
-There are times we find ourself in a situation where we need to know where exactly we are in the file system. For that we use a command called `pwd`, which stands for Print Working Directory. A lot of commands are abbreviations for the action they actually do. This makes it easier on us to remember and do our jobs. So now if we type  `pwd` in our terminals and press Enter the terminal will print out the path to the directory we're in.
+There are times we find ourself in a situation where we need to know where exactly we are in the file system. For that, we use the command `pwd`, which stands for Print Working Directory. A lot of commands are abbreviations for the action they actually do. This makes it easier on us to remember and do our jobs. If we type `pwd` in our terminals and press Enter, the terminal will print out the path to the directory we're in.
 
 ```console
 user@bash: pwd
@@ -12,27 +12,27 @@ user@bash: pwd
 user@bash: 
 ```
 
-Also if you're wondering what a directory is it's just another name for a folder on a computer.
+Also if you're wondering what a directory is, it's just another name for a folder on a computer.
 
 ## What's in here?
-So now that we can see what folder we're in we want to know what's actually in the folder. We have the `ls` command for that. `ls` is short for list, as in list out everything in this folder. Let's give it a try.
+So now that we can see what folder we're in, we want to know what's actually in the folder. We have the `ls` command for that. `ls` is short for list, as in list out everything in this folder. Let's give it a try.
 
 ```console
 user@bash: ls
 bin Documents public_html
 user@bash: 
 ```
-You can see it lists out the contents of the current folder you're in. What if we wanted to see the contents of another directory? `ls` can also be executed using another location.
+As you can see, it lists out the contents of the current folder you're in. What if we wanted to see the contents of another directory? `ls` can also be executed using another location.
 
 ```console
 user@bash: ls Documents
 index.html essay.docx Pictures
 user@bash: 
 ```
-As you can see when we told `ls` to use the Documents folder as the location argument it actually prints out the contents of Documents instead of the current directory we're in.
+You can see when we told `ls` to use the Documents folder as the location argument it actually prints out the contents of Documents instead of the current directory we're in.
 
 ## So many options!
-Remember we discussed before how commands also have options sometimes. Let's use one of those and see what it looks like. `ls` has an option `-l` which stands for long. What this will do is instead of just printing out the contents of the folder it will give a longer description than just a name. Let's see that in action.
+Earlier, we discussed how commands also have options. Let's use one of those and see what it looks like. `ls` has an option `-l` which stands for long. Instead of just printing out the contents of the folder, the `-l` option will give a more detailed description of each item. Let's see that in action.
 
 ```console
 user@bash: ls
@@ -129,3 +129,6 @@ user@bash: Doc
 ```
 
 Now that I've typed "Doc" and there is only one available option left I can hit the the tab key and the terminal autocomplete "Documents" for me.
+
+
+TRANSITION GOES HERE
