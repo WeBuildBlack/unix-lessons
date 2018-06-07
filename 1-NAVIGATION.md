@@ -60,7 +60,7 @@ user@bash:
 
 As we can see when printing out the long listing it tells us a lot more. Lets try to understand what some of that output means:
 
-* If the first letter we letter we see is a "d" then it's a directory. So "drwxr-xr-x" would mean that line is printing out a folder. If we see "-" then it is a file. For example: -rwxr-xr-x
+* If the first letter we see is a "d" then it's a __directory__. So "drwxr-xr-x" would mean that line is printing out a folder. If we see "-" then it is a __file__. For example: -rwxr-xr-x
 * The next 9 characters (ex: rwxr-xr-x) are permissions for the file or directory
 * The next field is the number of blocks (don't worry too much about this).
 * The next field is the owner of the file or directory (devin in this case).
@@ -70,27 +70,27 @@ As we can see when printing out the long listing it tells us a lot more. Lets tr
 * Finally we have the actual name of the file or directory.
 
 ## What is a path?
-I think it's time we jumped more into paths and what they are. When referring to a file or directory in a the terminal we are referring to a path. So for example the path to my Documents directory would be `/home/devin/Documents`. A path is literally just a way to get to a file or directory in your computer system.  
+I think it's time we jumped more into paths and what they are. When referring to a file or directory in a the terminal, we are referring to a path. For example the path to my Documents directory would be `/home/devin/Documents`. A path is literally just a way to get to a file or directory in your computer system.  
 
-First though, for you to understand the concept of paths you need to understand how your computer's file system is structured. The Unix filesystem is essentially a giant tree. Here's a picture to illustrate my point.
+First though, to understand the concept of paths, you need to understand how your computer's file system is structured. The Unix file system is essentially a giant tree. Here's a picture to illustrate my point.
 ![Unix File System](./images/unix-fs.jpg)  
 The first level is your root directory and is located at `/`. The root fodler has child folders and those have child folders and so on. If you see `/home` has child directories that go to the different users on your system. Then those user directories have that users folders such as `/home/nikita/games`.  
 
 ### Which path to take?
-So there are 2 kinds of paths. Absolute paths and relative paths.  
+There are 2 kinds of paths. Absolute paths and relative paths.  
 
 Absolute paths refer to a location starting from the root. For example: `/home/nikita/games`.  
 
-Relative paths refer to location in relation to what directory you're in. For example using the picture above if I was in the `/home` directory and wanted to point to the `/home/nikita/games` directory than I could just say `nikita/games` because it's relative to where I am currently. Notice I also don't start with a slash because if I did then the terminal would think I'm trying to start from the root directory. 
+Relative paths refer to file/directory in relation to what directory you're in. For example using the picture above if I was in the `/home` directory and wanted to point to the `/home/nikita/games` directory than I could just say `nikita/games` because it's relative to where I am currently. Notice I also don't start with a slash because if I did then the terminal would think I'm trying to start from the root directory. 
 
 #### Quick things to note
 
-* ~ (tilde) - This is a shortcut for your home directory. eg, if your home directory is /home/ryan then you could refer to the directory Documents with the path /home/ryan/Documents or ~/Documents
-* . (dot) - This is a reference to your current directory. eg in the example above we referred to Documents on line 4 with a relative path. It could also be written as ./Documents (Normally this extra bit is not required but in later sections we will see where it comes in handy).
-* .. (dotdot)- This is a reference to the parent directory. You can use this several times in a path to keep going up the hierarchy. eg if you were in the path /home/ryan you could run the command ls ../../ and this would do a listing of the root directory.  
+* ~ (tilde) - This is a shortcut for your home directory. For example, if your home directory for the current user is `/home/devin`, then you could refer to the directory Documents with the path `/home/devin/Documents` or `~/Documents`
+* . (dot) - This is a reference to your current directory. For example, if the Documents folder is my current directory I could refer to it as `Documents` or `./Documents`. Normally this extra bit is not required, but in later sections we will see where it comes in handy.
+* .. (dotdot)- This is a reference to the parent directory. You can use this several times in a path to keep going up the hierarchy. For example, if you were in the path /home/ryan you could run the command ls ../../ and this would do a listing of the root directory.  
 
 ## Time to make a move
-So you're probably thinking "yea that's cool that I can list all these directories and files but how do I actually move around in my directories. We have `cd`, short for Change Directory, for that. For example:
+So you're probably thinking "yea it's cool that I can list all these directories and files but how do I actually move around in my directories". So for that we have `cd`, short for Change Directory. For example:
 
 ```console
 user@bash: pwd
@@ -111,7 +111,7 @@ user@bash: pwd
 ```
 
 #### Be lazy!!
-Programmers are always thinking of new ways to spend less time doing the boring stuff. With tab completion you can have the computer spell things out for you instead of typing it. For example:  
+Programmers are always thinking of new ways to spend less time doing the boring stuff. With tab completion, you can have the computer spell things out for you instead of typing it. For example:  
 ```console
 user@bash: pwd
 /home/devin
@@ -120,15 +120,14 @@ Documents Downloads Pictures docker.html
 user@bash: Do
 ```
 
-Now at this point in my typing "Do" the terminal is aware that there are two locations I could possibly be thinking of: Downloads and Documents. You're probably thinking "why not docker.html too?". Well that's because the terminal is aware of casing. That being said if I press the tab key once nothing will happen because there are still multiple options. If I press it twice it will print out the available options though.
-
+Now at this point in my typing "Do" the terminal is aware that there are two locations I could possibly be thinking of: Downloads and Documents. You're probably thinking "why not docker.html too?" Well that's because the terminal is aware of casing. That being said, if I press the tab key once, nothing will happen because there are still multiple options. If I press it twice it will print out the available options though.  
 ```console
 user@bash: Do
 Documents Downloads
 user@bash: Doc
 ```
+Now that I've typed "Doc" and there is only one available option left, I can hit the the tab key and the terminal autocomplete "Documents" for me.
 
-Now that I've typed "Doc" and there is only one available option left I can hit the the tab key and the terminal autocomplete "Documents" for me.
 
-
-TRANSITION GOES HERE
+## Stick around for the next episode...
+In the next lesson we'll dig a little deeper into files and how to interact with them. Click [here](https://github.com/WeBuildBlack/unix-lessons/blob/master/3-FILES.md) to go there now.
