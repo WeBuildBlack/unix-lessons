@@ -1,3 +1,5 @@
+From this point on it is highly reccomended that you follow along by typing everything in your terminal. Learning by doing is the best way!  
+
 # Navigation
 So let's talk a little about how we can move around our file system. This is important as many commands require you to reference the file system location when executing them.
 
@@ -71,7 +73,7 @@ As we can see when printing out the long listing it tells us a lot more. Lets tr
 I think it's time we jumped more into paths and what they are. When referring to a file or directory in a the terminal we are referring to a path. So for example the path to my Documents directory would be `/home/devin/Documents`. A path is literally just a way to get to a file or directory in your computer system.  
 
 First though, for you to understand the concept of paths you need to understand how your computer's file system is structured. The Unix filesystem is essentially a giant tree. Here's a picture to illustrate my point.
-![Unix File System](./unix-fs2.jpg)  
+![Unix File System](./images/unix-fs.jpg)  
 The first level is your root directory and is located at `/`. The root fodler has child folders and those have child folders and so on. If you see `/home` has child directories that go to the different users on your system. Then those user directories have that users folders such as `/home/nikita/games`.  
 
 ### Which path to take?
