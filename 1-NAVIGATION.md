@@ -130,4 +130,4 @@ Now that I've typed "Doc" and there is only one available option left, I can hit
 
 
 ## Stick around for the next episode...
-In the next lesson we'll dig a little deeper into files and how to interact with them. Click [here](https://github.com/WeBuildBlack/unix-lessons/blob/master/3-FILES.md) to go there now.
+In the next lesson we'll dig a little deeper into files and how to interact with them.
